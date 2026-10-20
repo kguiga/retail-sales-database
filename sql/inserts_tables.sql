@@ -1,0 +1,226 @@
+USE varejista;
+
+INSERT INTO Marca VALUES
+('MARCA1001','Coca Cola'),
+('MARCA1002','Pepsi'),
+('MARCA1003','Antartica'),
+('MARCA1004','Brahma'),
+('MARCA1005','Skol'),
+('MARCA1006','Heineken'),
+('MARCA1007','Amstel'),
+('MARCA1008','Fanta'),
+('MARCA1009','Sprite'),
+('MARCA1010','Guarana Antarctica'),
+('MARCA1011','Schweppes'),
+('MARCA1012','Red Bull'),
+('MARCA1013','Monster'),
+('MARCA1014','Budweiser'),
+('MARCA1015','Stella Artois');
+
+
+INSERT INTO Fornecedor VALUES
+('FORNE1001','Empresa de Atacado MG','Rua Minas Gerais 100'),
+('FORNE1002','Empresa de Atacado ES','Rua Espirito Santo 200'),
+('FORNE1003','Empresa de Atacado TM','Rua Treze de Maio 300'),
+('FORNE1004','Empresa de Atacado FL','Rua das Flores 400'),
+('FORNE1005','Empresa de Atacado SM','Rua Santa Maria 500'),
+('FORNE1006','Empresa de Atacado BV','Rua Boa Vista 600'),
+('FORNE1007','Distribuidora Alpha','Rua das Palmeiras 150'),
+('FORNE1008','Distribuidora Beta','Avenida Central 250'),
+('FORNE1009','Distribuidora Gama','Rua do Comercio 300'),
+('FORNE1010','Distribuidora Delta','Rua XV de Novembro 450'),
+('FORNE1011','Atacado Nacional','Avenida Brasil 500'),
+('FORNE1012','Logistica Sul','Rua das Acacias 600'),
+('FORNE1013','Abastece Norte','Rua Amazonas 700'),
+('FORNE1014','Mega Distribuicao','Avenida Paulista 800'),
+('FORNE1015','Fornecedor Premium','Rua da Industria 900');
+
+
+INSERT INTO Cliente VALUES
+('CLI1001','Miguel','(21)1234-1000','12345671000','Rua Santa Luzia 343',100),
+('CLI1002','Helena','(21)1234-1001','12345671001','Rua Sao Jorge 341',150),
+('CLI1003','Arthur','(21)1234-1002','12345671002','Rua Dezenove 333',200),
+('CLI1004','Alice','(21)1234-1003','12345671003','Rua Castro Alves 331',250),
+('CLI1005','Heitor','(21)1234-1004','12345671004','Rua Duque de Caxias 329',300),
+('CLI1006','Laura','(21)1234-1005','12345671005','Rua Rui Barbosa 320',350),
+('CLI1007','Carlos','(21)1234-1006','12345671006','Rua das Palmeiras 100',120),
+('CLI1008','Fernanda','(21)1234-1007','12345671007','Rua do Comercio 120',180),
+('CLI1009','Ricardo','(21)1234-1008','12345671008','Avenida Central 140',210),
+('CLI1010','Patricia','(21)1234-1009','12345671009','Rua das Acacias 160',250),
+('CLI1011','Roberto','(21)1234-1010','12345671010','Rua XV de Novembro 180',300),
+('CLI1012','Juliana','(21)1234-1011','12345671011','Avenida Brasil 200',330),
+('CLI1013','Eduardo','(21)1234-1012','12345671012','Rua Amazonas 220',170),
+('CLI1014','Camila','(21)1234-1013','12345671013','Rua Paulista 240',280),
+('CLI1015','Marcos','(21)1234-1014','12345671014','Rua da Industria 260',350);
+
+
+INSERT INTO Dependente VALUES
+(1,'Joao','Filho','CLI1001'),
+(2,'Karina','Filha','CLI1001'),
+(3,'Pedro','Filho','CLI1002'),
+(4,'Helena Micaela','Filha','CLI1003'),
+(5,'Lucas','Filho','CLI1004'),
+(6,'Julia','Filha','CLI1005'),
+(7,'Gabriel','Filho','CLI1006'),
+(8,'Clara','Filha','CLI1007'),
+(9,'Rafael','Filho','CLI1008'),
+(10,'Bruna','Filha','CLI1009'),
+(11,'Mateus','Filho','CLI1010'),
+(12,'Livia','Filha','CLI1011'),
+(13,'Caio','Filho','CLI1012'),
+(14,'Sofia','Filha','CLI1013'),
+(15,'Enzo','Filho','CLI1014');
+
+
+INSERT INTO Loja VALUES
+('LOJA1001','Loja Centro 1','FISICA','Rua Presidente Vargas 100','Centro','8.00am-10.00pm'),
+('LOJA1002','Loja Centro 2','FISICA','Rua Rio Branco 100','Centro','8.00am-10.00pm'),
+('LOJA1003','Loja Zona Sul 1','FISICA','Avenida Atlantica 100','Zona Sul','8.00am-10.00pm'),
+('LOJA1004','Loja Zona Sul 2','FISICA','Avenida Nossa Senhora de Copacabana 100','Zona Sul','8.00am-10.00pm'),
+('LOJA1005','Loja Zona Norte 1','FISICA','Avenida Brasil 100','Zona Norte','8.00am-10.00pm'),
+('LOJA1006','Loja Zona Norte 2','FISICA','Estrada do Galeao 100','Zona Norte','8.00am-10.00pm'),
+('LOJAONLINE', 'Loja Virtual', 'ONLINE', 'Internet', 'Online', '24 Horas');
+
+
+INSERT INTO Produto VALUES
+('PROD1001','CODPROD1001','LOTE1001','Refrigerante Coca Cola','2 Litros','Garrafa PET','MARCA1001'),
+('PROD1002','CODPROD1002','LOTE1002','Refrigerante Pepsi','2 Litros','Garrafa PET','MARCA1002'),
+('PROD1003','CODPROD1003','LOTE1003','Cerveja Antartica','350 ml','Lata','MARCA1003'),
+('PROD1004','CODPROD1004','LOTE1004','Cerveja Brahma','350 ml','Lata','MARCA1004'),
+('PROD1005','CODPROD1005','LOTE1005','Cerveja Skol','350 ml','Lata','MARCA1005'),
+('PROD1006','CODPROD1006','LOTE1006','Cerveja Heineken','350 ml','Lata','MARCA1006'),
+('PROD1007','CODPROD1007','LOTE1007','Cerveja Amstel','350 ml','Lata','MARCA1007'),
+('PROD1008','CODPROD1008','LOTE1008','Refrigerante Fanta','2 Litros','Garrafa PET','MARCA1008'),
+('PROD1009','CODPROD1009','LOTE1009','Refrigerante Sprite','2 Litros','Garrafa PET','MARCA1009'),
+('PROD1010','CODPROD1010','LOTE1010','Guarana Antarctica','2 Litros','Garrafa PET','MARCA1010'),
+('PROD1011','CODPROD1011','LOTE1011','Agua Tonica Schweppes','1 Litro','Garrafa PET','MARCA1011'),
+('PROD1012','CODPROD1012','LOTE1012','Energetico Red Bull','250 ml','Lata','MARCA1012'),
+('PROD1013','CODPROD1013','LOTE1013','Energetico Monster','473 ml','Lata','MARCA1013'),
+('PROD1014','CODPROD1014','LOTE1014','Cerveja Budweiser','350 ml','Lata','MARCA1014'),
+('PROD1015','CODPROD1015','LOTE1015','Cerveja Stella Artois','350 ml','Lata','MARCA1015');
+
+
+INSERT INTO Fornecedor_Marca VALUES
+('FORNE1001','MARCA1001'),
+('FORNE1002','MARCA1002'),
+('FORNE1003','MARCA1003'),
+('FORNE1004','MARCA1004'),
+('FORNE1005','MARCA1005'),
+('FORNE1006','MARCA1006'),
+('FORNE1007','MARCA1007'),
+('FORNE1008','MARCA1008'),
+('FORNE1009','MARCA1009'),
+('FORNE1010','MARCA1010'),
+('FORNE1011','MARCA1011'),
+('FORNE1012','MARCA1012'),
+('FORNE1013','MARCA1013'),
+('FORNE1014','MARCA1014'),
+('FORNE1015','MARCA1015');
+
+
+INSERT INTO Pedido VALUES
+('PEDIDO1001','2021-06-18','FISICA',69.30,'CLI1001','LOJA1001'),
+('PEDIDO1002','2021-06-18','FISICA',59.20,'CLI1002','LOJA1001'),
+('PEDIDO1003','2021-06-18','FISICA',79.90,'CLI1003','LOJA1002'),
+
+('PEDIDO1004','2021-06-18','ONLINE',34.80,'CLI1004','LOJAONLINE'),
+('PEDIDO1005','2021-06-18','ONLINE',93.30,'CLI1005','LOJAONLINE'),
+('PEDIDO1006','2021-06-18','ONLINE',82.30,'CLI1006','LOJAONLINE'),
+
+('PEDIDO1007','2021-06-19','FISICA',80.10,'CLI1007','LOJA1002'),
+('PEDIDO1008','2021-06-19','FISICA',51.10,'CLI1008','LOJA1003'),
+('PEDIDO1009','2021-06-19','FISICA',48.20,'CLI1009','LOJA1004'),
+
+('PEDIDO1010','2021-06-19','ONLINE',60.40,'CLI1010','LOJAONLINE'),
+
+('PEDIDO1011','2021-06-20','FISICA',32.70,'CLI1011','LOJA1006'),
+
+('PEDIDO1012','2021-06-20','ONLINE',54.70,'CLI1012','LOJAONLINE'),
+
+('PEDIDO1013','2021-06-20','FISICA',70.00,'CLI1013','LOJA1003'),
+
+('PEDIDO1014','2021-06-20','ONLINE',63.10,'CLI1014','LOJAONLINE'),
+
+('PEDIDO1015','2021-06-20','FISICA',68.90,'CLI1015','LOJA1005');
+
+
+INSERT INTO Estoque VALUES
+('LOJA1001','PROD1001',50,8.50),
+('LOJA1001','PROD1002',45,7.90),
+('LOJA1001','PROD1003',60,5.90),
+('LOJA1002','PROD1004',35,6.80),
+('LOJA1002','PROD1005',50,7.20),
+('LOJA1003','PROD1006',40,9.60),
+('LOJA1003','PROD1007',35,8.90),
+('LOJA1003','PROD1008',40,6.50),
+('LOJA1004','PROD1009',30,6.20),
+('LOJA1004','PROD1010',45,5.90),
+('LOJA1005','PROD1011',25,4.80),
+('LOJA1005','PROD1012',20,12.50),
+('LOJA1006','PROD1013',18,13.50),
+('LOJA1006','PROD1014',28,9.90),
+('LOJAONLINE','PROD1004',100,6.80),
+('LOJAONLINE','PROD1005',100,7.20),
+('LOJAONLINE','PROD1006',100,9.60),
+('LOJAONLINE','PROD1002',100,7.90),
+('LOJAONLINE','PROD1010',100,5.90),
+('LOJAONLINE','PROD1012',100,12.50),
+('LOJAONLINE','PROD1014',100,9.90),
+('LOJA1006','PROD1015',22,10.50);
+
+
+INSERT INTO Item_Pedido VALUES
+
+-- LOJA1001
+('PEDIDO1001','PROD1001',4,8.50),
+('PEDIDO1001','PROD1002',2,7.90),
+('PEDIDO1001','PROD1003',3,5.90),
+
+('PEDIDO1002','PROD1002',6,7.90),
+('PEDIDO1002','PROD1003',2,5.90),
+
+-- LOJA1002
+('PEDIDO1003','PROD1004',8,6.80),
+('PEDIDO1003','PROD1005',1,7.20),
+
+('PEDIDO1007','PROD1004',3,6.80),
+('PEDIDO1007','PROD1005',5,7.20),
+
+-- LOJA1003
+('PEDIDO1008','PROD1006',5,9.60),
+('PEDIDO1008','PROD1008',3,6.50),
+
+('PEDIDO1013','PROD1006',3,9.60),
+('PEDIDO1013','PROD1007',2,8.90),
+('PEDIDO1013','PROD1008',1,6.50),
+
+-- LOJA1004
+('PEDIDO1009','PROD1009',7,6.20),
+('PEDIDO1009','PROD1010',1,5.90),
+
+-- LOJA1005
+('PEDIDO1015','PROD1011',4,4.80),
+('PEDIDO1015','PROD1012',2,12.50),
+
+-- LOJA1006
+('PEDIDO1011','PROD1013',4,13.50),
+('PEDIDO1011','PROD1014',1,9.90),
+
+-- LOJAONLINE
+('PEDIDO1004','PROD1004',3,6.80),
+('PEDIDO1004','PROD1005',2,7.20),
+
+('PEDIDO1005','PROD1005',9,7.20),
+('PEDIDO1005','PROD1006',3,9.60),
+
+('PEDIDO1006','PROD1006',7,9.60),
+('PEDIDO1006','PROD1002',2,7.90),
+
+('PEDIDO1010','PROD1010',6,5.90),
+('PEDIDO1010','PROD1012',2,12.50),
+
+('PEDIDO1012','PROD1012',2,12.50),
+('PEDIDO1012','PROD1014',3,9.90),
+
+('PEDIDO1014','PROD1014',5,9.90),
+('PEDIDO1014','PROD1004',2,6.80);
