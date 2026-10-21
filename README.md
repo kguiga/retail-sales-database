@@ -25,6 +25,18 @@ O projeto contempla desde a modelagem conceitual até a implementação física 
 - MySQL
 - MySQL Workbench
 - SQL
+- Modelagem Relacional
+
+---
+
+## 📦 Artefatos Disponíveis
+
+- Modelo Entidade-Relacionamento (DER)
+- Arquivo editável do MySQL Workbench (.mwb)
+- Scripts de criação do banco
+- Scripts de carga de dados
+- Consultas analíticas
+- Backup do banco (.bak)
 
 ---
 
@@ -78,15 +90,15 @@ O projeto contempla desde a modelagem conceitual até a implementação física 
 
 ```text
 retail-sales-database/
-
+├── database/
+│   └── retail_sales_database.bak
 ├── docs/
+│   ├──  DER_Varejista.mwb
 │   └── DER_Varejista.png
-│
 ├── sql/
 │   ├── esquema_relacional.sql
 │   ├── inserts_tables.sql
 │   └── consultas.sql
-│
 ├── README.md
 └── .gitignore
 ```
@@ -95,11 +107,12 @@ retail-sales-database/
 
 ## 🗺️ Diagrama Entidade-Relacionamento
 
-O DER completo encontra-se em:
+O modelo foi desenvolvido utilizando MySQL Workbench.
 
-```text
-docs/DER_Varejista.png
-```
+Arquivos disponíveis:
+
+- `docs/DER_Varejista.png`
+- `docs/DER_Varejista.mwb`
 
 ---
 
@@ -129,9 +142,9 @@ Implementação utilizando CTEs e Window Functions (`RANK()`).
 
 ## 🚀 Como Utilizar
 
-### 1. Criar o banco
+### 1. Criar a estrutura do banco
 
-Executar:
+Execute:
 
 ```sql
 esquema_relacional.sql
@@ -139,7 +152,7 @@ esquema_relacional.sql
 
 ### 2. Popular as tabelas
 
-Executar:
+Execute:
 
 ```sql
 inserts_tables.sql
@@ -147,11 +160,23 @@ inserts_tables.sql
 
 ### 3. Executar as consultas
 
-Executar:
+Execute:
 
 ```sql
 consultas.sql
 ```
+
+---
+
+## 📈 Informações Geradas 
+
+O banco permite analisar: 
+
+- Quantidade de lojas por cidade 
+- Quantidade de pedidos por loja 
+- Produtos mais vendidos 
+- Disponibilidade de estoque por loja 
+- Ranking de vendas por unidade
 
 ---
 
@@ -173,6 +198,8 @@ Durante o desenvolvimento deste projeto foram praticados:
 
 ## 📌 Conclusão
 
-O projeto permitiu aplicar na prática conceitos de modelagem e implementação de bancos de dados relacionais, desde a definição do modelo conceitual até a criação de consultas analíticas para apoio à tomada de decisão.
+Este projeto permitiu aplicar conceitos de modelagem relacional, normalização, integridade referencial e consultas analíticas utilizando MySQL Workbench.
 
-Além da implementação do banco, o desenvolvimento proporcionou experiência com modelagem de domínio, relacionamentos complexos e consultas SQL avançadas.
+Durante o desenvolvimento foram modeladas entidades de negócio de uma operação varejista completa, implementando relacionamentos complexos, cargas de dados e consultas SQL para geração de indicadores operacionais e comerciais.
+
+---
